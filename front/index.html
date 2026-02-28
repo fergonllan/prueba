@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoVentas - Tienda de Motocicletas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MotoVentas</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="carrito">🛒</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <h1>Bienvenido a MotoVentas</h1>
+        <p>Las mejores motocicletas a los mejores precios</p>
+        <button class="btn-principal">Explorar Catálogo</button>
+    </section>
+
+    <!-- Catálogo -->
+    <section id="catalogo" class="catalogo">
+        <h2>Nuestras Motocicletas</h2>
+        <div class="productos-grid">
+            <div class="producto-card">
+                <img src="moto1.jpg" alt="Motocicleta 1">
+                <h3>Honda CB500</h3>
+                <p class="precio">$5,999</p>
+                <p class="descripcion">Deportiva de alto rendimiento</p>
+                <button class="btn-comprar">Ver Detalles</button>
+            </div>
+            <div class="producto-card">
+                <img src="moto2.jpg" alt="Motocicleta 2">
+                <h3>Yamaha MT-07</h3>
+                <p class="precio">$7,499</p>
+                <p class="descripcion">Naked bike versátil</p>
+                <button class="btn-comprar">Ver Detalles</button>
+            </div>
+            <div class="producto-card">
+                <img src="moto3.jpg" alt="Motocicleta 3">
+                <h3>Kawasaki Ninja</h3>
+                <p class="precio">$8,999</p>
+                <p class="descripcion">Deportiva de carreras</p>
+                <button class="btn-comprar">Ver Detalles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio">
+                <h3>Financiamiento</h3>
+                <p>Planes de pago flexibles</p>
+            </div>
+            <div class="servicio">
+                <h3>Mantenimiento</h3>
+                <p>Revisiones y reparaciones</p>
+            </div>
+            <div class="servicio">
+                <h3>Accesorios</h3>
+                <p>Gran variedad de repuestos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form class="formulario-contacto">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MotoVentas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
