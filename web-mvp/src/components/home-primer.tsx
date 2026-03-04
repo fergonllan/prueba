@@ -5,37 +5,42 @@ export function HomePrimer() {
     <section className="home-primer panel" id="primer">
       <div className="home-primer-head">
         <p className="kicker">Entender en 60 segundos</p>
-        <h2>Cómo enfrentar discursos de odio con una herramienta descentralizada</h2>
+        <h2>Cómo enfrentar discursos de odio con tecnología descentralizada</h2>
         <p>
-          Primero, foco social. Después, cómo se usa. Y recién al final, la parte técnica.
+          Empezamos por el impacto social, seguimos con el uso práctico y recién después
+          entramos en la capa técnica.
         </p>
       </div>
 
       <div className="home-primer-visuals">
         <article className="primer-graphic">
-          <h3>Problema social</h3>
+          <h3>Qué mejora social busca</h3>
           <div className="signal-rows" aria-hidden>
-            <span className="signal signal-bad" />
             <span className="signal signal-bad" />
             <span className="signal signal-bad" />
             <span className="signal signal-mid" />
             <span className="signal signal-good" />
+            <span className="signal signal-good" />
           </div>
-          <p className="muted">Alta circulación de mensajes hostiles en canales digitales.</p>
+          <p className="muted">
+            Menos normalización del odio, más información útil para convivencia democrática.
+          </p>
         </article>
 
         <article className="primer-graphic">
-          <h3>Respuesta del proyecto</h3>
+          <h3>Cómo se usa la herramienta</h3>
           <div className="mini-flow" aria-hidden>
             <span>Comunidad</span>
-            <span>→</span>
+            <span>{"->"}</span>
             <span>DAO</span>
-            <span>→</span>
+            <span>{"->"}</span>
             <span>Reglas</span>
-            <span>→</span>
-            <span>Resultados</span>
+            <span>{"->"}</span>
+            <span>Reportes</span>
           </div>
-          <p className="muted">Proceso público, auditable y orientado a impacto social.</p>
+          <p className="muted">
+            Flujo colaborativo, auditable y orientado a resultados públicos comprensibles.
+          </p>
         </article>
       </div>
 

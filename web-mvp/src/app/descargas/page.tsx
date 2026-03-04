@@ -1,5 +1,6 @@
-﻿import Link from "next/link";
 import { downloadItems } from "@/content/site-content";
+
+const basePath = process.env.NODE_ENV === "production" ? "/universal-hate-marks" : "";
 
 export default function DescargasPage() {
   return (
@@ -8,8 +9,8 @@ export default function DescargasPage() {
         <p className="kicker">Material académico</p>
         <h2>Descargas</h2>
         <p>
-          Repositorio documental del proyecto: tesis, bibliografía y anexos. Cuando
-          un archivo esté disponible, se habilita enlace directo desde esta sección.
+          Repositorio documental del proyecto. Aquí podés descargar la tesis completa
+          en PDF con acceso directo.
         </p>
       </section>
 
@@ -23,9 +24,9 @@ export default function DescargasPage() {
             <div className="download-action">
               <strong>{item.status}</strong>
               {item.href ? (
-                <Link href={item.href} className="quick-link">
+                <a href={`${basePath}${item.href}`} className="quick-link" download>
                   Descargar
-                </Link>
+                </a>
               ) : null}
             </div>
           </article>

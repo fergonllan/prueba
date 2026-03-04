@@ -4,13 +4,13 @@ function DiagramPipeline() {
   return (
     <div className="home-diagram-canvas">
       <div className="home-step">Propuesta de regla</div>
-      <span className="home-arrow">→</span>
+      <span className="home-arrow">{"->"}</span>
       <div className="home-step">Debate lingüístico</div>
-      <span className="home-arrow">→</span>
+      <span className="home-arrow">{"->"}</span>
       <div className="home-step">Votación DAO</div>
-      <span className="home-arrow">→</span>
+      <span className="home-arrow">{"->"}</span>
       <div className="home-step">Bloque validado</div>
-      <span className="home-arrow">→</span>
+      <span className="home-arrow">{"->"}</span>
       <div className="home-step">Regla activa</div>
     </div>
   );
@@ -19,7 +19,7 @@ function DiagramPipeline() {
 function DiagramArchitecture() {
   return (
     <div className="home-diagram-canvas home-diagram-architecture">
-      <div className="home-arch-node">Oráculos / Fuentes</div>
+      <div className="home-arch-node">Oráculos / fuentes</div>
       <div className="home-arch-node">Motor de reglas</div>
       <div className="home-arch-node">Puntaje de riesgo</div>
       <div className="home-arch-node">Hash en blockchain</div>

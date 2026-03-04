@@ -1,7 +1,7 @@
 ﻿export const siteMeta = {
-  projectShortName: "Proyecto DAO-Ling",
-  projectFormalTitle: "Proyecto de desarrollo blockchain contra el discurso de odio",
-  title: "Proyecto DAO-Ling",
+  projectShortName: "Universal Hate Marks",
+  projectFormalTitle: "Universal Hate Marks: desarrollo blockchain contra el discurso de odio",
+  title: "Universal Hate Marks",
   subtitle:
     "Tesis de Máster en Dirección Estratégica e Innovación en la Comunicación",
   author: "Fernando Gonzalez Llanos",
@@ -54,45 +54,45 @@ export const homeBlocks: HomeBlock[] = [
 export const socialFocusHighlights = [
   {
     title: "Protección de comunidades vulneradas",
-    body: "El foco inicial es reducir exposición y naturalización de lenguaje de odio en la esfera digital.",
+    body: "El foco central es reducir exposición, normalización y reproducción del discurso de odio en entornos digitales.",
   },
   {
     title: "Debate público más sano",
-    body: "La herramienta busca elevar calidad discursiva con evidencia, no con censura automática.",
+    body: "La herramienta promueve decisiones informadas con evidencia abierta, sin automatizar castigos ni censuras.",
   },
   {
     title: "Respuesta colectiva y transparente",
-    body: "Las reglas se diseñan y validan de forma descentralizada para evitar arbitrariedad.",
+    body: "Las reglas se diseñan y validan de forma descentralizada para reducir arbitrariedad y sesgos de poder.",
   },
 ];
 
 export const nonTechUsageSteps = [
   {
     title: "1. La comunidad detecta casos",
-    body: "Personas y organizaciones señalan contenidos o patrones preocupantes.",
+    body: "Personas y organizaciones marcan contenidos o patrones preocupantes de manera colaborativa.",
   },
   {
     title: "2. La DAO convierte casos en reglas",
-    body: "Equipos lingüísticos proponen, debaten y votan reglas claras.",
+    body: "Equipos lingüísticos proponen, debaten y votan reglas con criterios explícitos.",
   },
   {
     title: "3. Se publican resultados comprensibles",
-    body: "El sistema comunica hallazgos con trazabilidad metodológica.",
+    body: "El sistema comunica hallazgos con trazabilidad metodológica y lectura accesible.",
   },
 ];
 
 export const complexityLadders = [
   {
     level: "Nivel 1 · Social",
-    summary: "Qué mejora: menos normalización del odio y más evidencia para la conversación pública.",
+    summary: "Qué mejora: menos normalización del odio y más herramientas para convivencia democrática.",
   },
   {
     level: "Nivel 2 · Operativo",
-    summary: "Cómo se usa: propuesta de regla, votación, ejecución analítica y comunicación.",
+    summary: "Cómo se usa: propuesta de regla, votación, ejecución analítica y comunicación pública.",
   },
   {
     level: "Nivel 3 · Técnico",
-    summary: "Cómo funciona: contratos inteligentes, oráculos, consenso y registro blockchain.",
+    summary: "Cómo funciona: contratos inteligentes, oráculos, consenso y registro verificable en blockchain.",
   },
 ];
 
@@ -723,18 +723,9 @@ export type DownloadItem = {
 export const downloadItems: DownloadItem[] = [
   {
     name: "Tesis completa (PDF)",
-    status: "Disponible próximamente",
-    note: "Publicar en public/docs/tesis.pdf para habilitar descarga directa.",
-  },
-  {
-    name: "Bibliografía",
-    status: "Pendiente",
-    note: "Publicar en public/docs/bibliografia.pdf.",
-  },
-  {
-    name: "Anexos",
-    status: "Pendiente",
-    note: "Publicar en public/docs/anexos.pdf.",
+    status: "Disponible",
+    note: "Descarga directa del documento completo de tesis.",
+    href: "/docs/tesis.pdf",
   },
 ];
 

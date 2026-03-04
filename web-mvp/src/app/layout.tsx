@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: siteMeta.projectFormalTitle,
+  title: siteMeta.projectShortName,
   description: siteMeta.subtitle,
 };
 

@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { HomePrimer } from "@/components/home-primer";
 import { HomeTechnicalDiagrams } from "@/components/home-technical-diagrams";
 import { evidenceStats, homeBlocks, operationalPillars, siteMeta } from "@/content/site-content";
@@ -10,30 +10,22 @@ export default function Home() {
 
       <section className="panel home-anchor-nav">
         <p className="kicker">Ruta de lectura</p>
-        <div className="quick-links">
-          <a href="#primer" className="quick-link">
-            Entender rápido
-          </a>
-          <a href="#impacto" className="quick-link">
-            Impacto social
-          </a>
-          <a href="#operativa" className="quick-link">
-            Operativa
-          </a>
-          <a href="#tecnico" className="quick-link">
-            Nivel técnico
-          </a>
-        </div>
+        <nav className="anchor-list" aria-label="Navegación por secciones de home">
+          <a href="#primer">Entender rápido</a>
+          <a href="#impacto">Impacto social</a>
+          <a href="#operativa">Operativa</a>
+          <a href="#tecnico">Base técnica</a>
+        </nav>
       </section>
 
       <section className="hero hero-executive" id="impacto">
         <div>
-          <p className="kicker">Proyecto académico · cívico · tecnológico</p>
+          <p className="kicker">Civic tech con enfoque en derechos</p>
           <h2>{siteMeta.projectFormalTitle}</h2>
           <p>
-            DAO-Ling propone una infraestructura descentralizada para diseñar, validar
-            y aplicar reglas discursivas contra el odio en entornos digitales, con
-            trazabilidad pública y gobernanza colaborativa.
+            Universal Hate Marks propone una infraestructura descentralizada para
+            identificar patrones de odio, fortalecer la convivencia democrática y
+            comunicar resultados con transparencia metodológica.
           </p>
         </div>
         <div className="stats-grid">
@@ -75,29 +67,23 @@ export default function Home() {
       </section>
 
       <section className="panel">
-        <p className="kicker">Navegación rápida</p>
+        <p className="kicker">Siguientes pasos</p>
         <div className="quick-links">
           <Link href="/resumen" className="quick-link">
-            Ver resumen y objetivos
+            Ver resumen completo
           </Link>
           <Link href="/como-funciona" className="quick-link">
-            Explorar flujo operativo
-          </Link>
-          <Link href="/mapa" className="quick-link">
-            Revisar mapa de grupos
-          </Link>
-          <Link href="/fases" className="quick-link">
-            Evaluar roadmap por fases
-          </Link>
-          <Link href="/faq" className="quick-link">
-            Consultar preguntas frecuentes
+            Explorar operación
           </Link>
           <Link href="/guia" className="quick-link">
-            Abrir guía estilo GitBook
+            Abrir guía rápida
           </Link>
-          <Link href="/descargas" className="quick-link">
-            Descargar material académico
-          </Link>
+        </div>
+        <div className="secondary-links">
+          <Link href="/faq">FAQ</Link>
+          <Link href="/mapa">Mapa de grupos</Link>
+          <Link href="/fases">Roadmap</Link>
+          <Link href="/descargas">Descargas</Link>
         </div>
       </section>
     </>

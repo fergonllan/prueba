@@ -7,10 +7,10 @@ export default function FaqPage() {
     <>
       <section className="hero">
         <p className="kicker">Preguntas frecuentes</p>
-        <h2>FAQ del proyecto DAO-Ling</h2>
+        <h2>FAQ de Universal Hate Marks</h2>
         <p>
           Respuestas curadas desde la tesis para cubrir fundamentos, operación,
-          gobernanza, incentivos, límites éticos y escalabilidad.
+          gobernanza, incentivos y límites de una manera clara y usable.
         </p>
       </section>
 
