@@ -8,6 +8,7 @@ const links = [
   { href: "/resumen", label: "Resumen" },
   { href: "/faq", label: "FAQ" },
   { href: "/como-funciona", label: "Cómo funciona" },
+  { href: "/guia", label: "Guía" },
   { href: "/mapa", label: "Mapa" },
   { href: "/fases", label: "Fases" },
   { href: "/glosario", label: "Glosario" },

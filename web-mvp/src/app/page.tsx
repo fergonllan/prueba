@@ -1,4 +1,5 @@
 ﻿import Link from "next/link";
+import { HomeTechnicalDiagrams } from "@/components/home-technical-diagrams";
 import { evidenceStats, homeBlocks, operationalPillars, siteMeta } from "@/content/site-content";
 
 export default function Home() {
@@ -47,6 +48,11 @@ export default function Home() {
         </div>
       </section>
 
+      <section>
+        <p className="kicker">Esquemas técnicos de operación blockchain</p>
+        <HomeTechnicalDiagrams />
+      </section>
+
       <section className="panel">
         <p className="kicker">Navegación rápida</p>
         <div className="quick-links">
@@ -64,6 +70,9 @@ export default function Home() {
           </Link>
           <Link href="/faq" className="quick-link">
             Consultar preguntas frecuentes
+          </Link>
+          <Link href="/guia" className="quick-link">
+            Abrir guía estilo GitBook
           </Link>
           <Link href="/descargas" className="quick-link">
             Descargar material académico

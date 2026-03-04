@@ -692,3 +692,187 @@ export const downloadItems: DownloadItem[] = [
     note: "Publicar en public/docs/anexos.pdf.",
   },
 ];
+
+export type HomeTechnicalDiagram = {
+  id: string;
+  title: string;
+  caption: string;
+  source: string;
+};
+
+export const homeTechnicalDiagrams: HomeTechnicalDiagram[] = [
+  {
+    id: "pipeline-consenso",
+    title: "Pipeline de consenso blockchain",
+    caption:
+      "Muestra cómo una propuesta lingüística se convierte en regla activa tras debate, votación y registro en cadena.",
+    source: "Síntesis técnica basada en fases operativas de la tesis.",
+  },
+  {
+    id: "arquitectura-ejecucion",
+    title: "Arquitectura de ejecución y trazabilidad",
+    caption:
+      "Representa el flujo de análisis: oráculos de contenido, evaluación por reglas, registro auditable y comunicación de hallazgos.",
+    source: "Síntesis técnica basada en capítulos de operabilidad y tokenomics.",
+  },
+];
+
+export type GuideTopic = {
+  id: string;
+  title: string;
+  summary: string;
+  bullets: string[];
+};
+
+export const guideTopics: GuideTopic[] = [
+  {
+    id: "01-problema",
+    title: "Problema que aborda",
+    summary:
+      "El proyecto responde al aumento de discursos de odio en entornos digitales y a la necesidad de mecanismos más transparentes.",
+    bullets: [
+      "Escala de circulación mayor que la capacidad de respuesta tradicional.",
+      "Requiere intervención lingüística y no solo tecnológica.",
+    ],
+  },
+  {
+    id: "02-vision",
+    title: "Visión del proyecto",
+    summary:
+      "Construir una infraestructura colaborativa para detectar patrones de odio y comunicar evidencia con impacto social.",
+    bullets: [
+      "Modelo descentralizado, auditado y participativo.",
+      "Orientación inicial al ecosistema hispanohablante.",
+    ],
+  },
+  {
+    id: "03-arquitectura-dao",
+    title: "Arquitectura DAO",
+    summary:
+      "La organización opera con nodos distribuidos que proponen, mejoran y votan reglas discursivas sin jerarquías rígidas.",
+    bullets: [
+      "Gobernanza horizontal con trazabilidad de decisiones.",
+      "Separación entre capa social y capa operativa técnica.",
+    ],
+  },
+  {
+    id: "04-roles-nodos",
+    title: "Roles de nodos",
+    summary:
+      "Lingüistas, comunidad y perfiles técnicos cumplen funciones complementarias para sostener calidad y escala del sistema.",
+    bullets: [
+      "Especialistas diseñan y validan reglas.",
+      "Comunidad prioriza casos y aporta contexto.",
+    ],
+  },
+  {
+    id: "05-smart-contracts",
+    title: "Contratos inteligentes",
+    summary:
+      "Los acuerdos de gobernanza y recompensas se formalizan en contratos ejecutables, minimizando arbitrariedad operativa.",
+    bullets: [
+      "Definen lógica de votación y umbrales de aceptación.",
+      "Automatizan reglas de incentivos y registro.",
+    ],
+  },
+  {
+    id: "06-oraculos",
+    title: "Oráculos y entrada de datos",
+    summary:
+      "Los oráculos conectan la DAO con fuentes externas de contenido para activar análisis sin comprometer trazabilidad.",
+    bullets: [
+      "Integran eventos o datasets fuera de la cadena.",
+      "Habilitan ejecución sobre canales priorizados.",
+    ],
+  },
+  {
+    id: "07-cadena-reglas",
+    title: "Cadena de reglas discursivas",
+    summary:
+      "Cada bloque incorpora reglas votadas; la acumulación crea una base evolutiva para análisis de discurso.",
+    bullets: [
+      "Versionado continuo de conocimiento lingüístico.",
+      "Historial verificable de cada regla activa.",
+    ],
+  },
+  {
+    id: "08-algoritmo-consenso",
+    title: "Algoritmo de consenso",
+    summary:
+      "No depende de un actor central; se alimenta del acuerdo entre participantes y del desempeño de reglas en contexto.",
+    bullets: [
+      "Convergencia por votación distribuida.",
+      "Ajuste iterativo ante nuevos escenarios discursivos.",
+    ],
+  },
+  {
+    id: "09-tokenomics",
+    title: "Tokenomics e incentivos",
+    summary:
+      "El modelo económico premia aportes útiles para sostener participación y mejora técnica del sistema.",
+    bullets: [
+      "Tokens por crear, refinar y activar reglas.",
+      "Incentivos también para contribuciones comunitarias.",
+    ],
+  },
+  {
+    id: "10-gobernanza-voto",
+    title: "Gobernanza y voto",
+    summary:
+      "Las decisiones clave sobre reglas, prioridades y evolución del protocolo se toman por mecanismos de voto definidos.",
+    bullets: [
+      "Criterios explícitos y auditables.",
+      "Registro permanente de resultados de cada ronda.",
+    ],
+  },
+  {
+    id: "11-comunicacion",
+    title: "Comunicación de resultados",
+    summary:
+      "La salida del sistema no es solo técnica: se publica en formatos comprensibles para visibilizar fenómenos discursivos.",
+    bullets: [
+      "Reportes periódicos con trazabilidad metodológica.",
+      "Difusión por canales digitales para alcance social.",
+    ],
+  },
+  {
+    id: "12-etica-limites",
+    title: "Ética y límites",
+    summary:
+      "La propuesta reconoce límites: no sustituye juicio humano ni garantiza por sí sola reducción del odio en redes.",
+    bullets: [
+      "Necesita revisión ética y control de sesgos.",
+      "Evita amplificar expresiones explícitas de daño.",
+    ],
+  },
+  {
+    id: "13-fases",
+    title: "Fases de implementación",
+    summary:
+      "El roadmap avanza desde diseño estratégico y prototipo hasta puesta en marcha operativa y comunicación pública.",
+    bullets: [
+      "Fase 1: diseño y prueba base.",
+      "Fase 2-3: escalado comunitario y operación.",
+    ],
+  },
+  {
+    id: "14-metricas",
+    title: "Métricas de éxito",
+    summary:
+      "El desempeño se evalúa por calidad de reglas, participación sostenida y capacidad de producir resultados comunicables.",
+    bullets: [
+      "Indicadores de actividad y validación por fase.",
+      "Seguimiento de cobertura y precisión discursiva.",
+    ],
+  },
+  {
+    id: "15-escalabilidad",
+    title: "Escalabilidad futura",
+    summary:
+      "La metodología puede extenderse a otros idiomas y dominios, manteniendo gobernanza y validación adaptadas al contexto.",
+    bullets: [
+      "Requiere nuevos marcos lingüísticos por idioma.",
+      "Puede adaptarse a otros conflictos de lenguaje público.",
+    ],
+  },
+];
