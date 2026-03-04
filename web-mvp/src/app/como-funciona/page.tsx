@@ -1,15 +1,16 @@
-import { flowSteps } from "@/content/site-content";
+﻿import { DaoDiagrams } from "@/components/dao-diagrams";
 import { ProtocolDemo } from "@/components/protocol-demo";
+import { flowSteps, operationalPillars } from "@/content/site-content";
 
 export default function ComoFuncionaPage() {
   return (
     <>
       <section className="hero">
         <p className="kicker">Flujo operacional</p>
-        <h2>Como opera la propuesta DAO</h2>
+        <h2>Cómo opera la propuesta DAO-Ling</h2>
         <p>
-          El esquema combina participacion de nodos expertos, gobernanza y
-          trazabilidad para pasar de reglas propuestas a resultados publicables.
+          El sistema combina gobernanza distribuida y ejecución técnica para
+          transformar propuestas discursivas en resultados analíticos comunicables.
         </p>
       </section>
 
@@ -23,6 +24,25 @@ export default function ComoFuncionaPage() {
             </li>
           ))}
         </ol>
+      </section>
+
+      <section className="grid-cards">
+        {operationalPillars.map((pillar) => (
+          <article key={pillar.title} className="card">
+            <h3>{pillar.title}</h3>
+            <p>{pillar.summary}</p>
+            <ul className="plain-list">
+              {pillar.highlights.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </section>
+
+      <section>
+        <p className="kicker">Diagramas operativos</p>
+        <DaoDiagrams section="como-funciona" />
       </section>
 
       <ProtocolDemo />

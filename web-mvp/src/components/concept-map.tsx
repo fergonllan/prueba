@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import { linguistGroups } from "@/content/site-content";
@@ -15,10 +15,10 @@ export function ConceptMap() {
   );
 
   return (
-    <section className="panel">
+    <section className="panel stack-md">
       <div className="toolbar">
-        <p className="kicker">Visualizacion de grupos linguistas</p>
-        <div className="toggle-group">
+        <p className="kicker">Visualización de grupos lingüísticos</p>
+        <div className="toggle-group" role="tablist" aria-label="Modo de mapa">
           <button
             type="button"
             className={`toggle-btn ${mode === "conceptual" ? "toggle-btn-on" : ""}`}
@@ -31,7 +31,7 @@ export function ConceptMap() {
             className={`toggle-btn ${mode === "geografico" ? "toggle-btn-on" : ""}`}
             onClick={() => setMode("geografico")}
           >
-            Geografico
+            Geográfico
           </button>
         </div>
       </div>
@@ -47,6 +47,7 @@ export function ConceptMap() {
             >
               <span className="node-short">{group.short}</span>
               <span>{group.name}</span>
+              <span className="node-meta">{group.relatedPhase}</span>
             </button>
           ))}
         </div>
@@ -61,6 +62,7 @@ export function ConceptMap() {
             >
               <span className="node-short">{group.region}</span>
               <span>{group.name}</span>
+              <span className="node-meta">{group.relatedPhase}</span>
             </button>
           ))}
         </div>
@@ -69,7 +71,7 @@ export function ConceptMap() {
       <article className="detail-card">
         <h3>{active.name}</h3>
         <p>
-          <strong>Que aporta:</strong> {active.aporte}
+          <strong>Qué aporta:</strong> {active.aporte}
         </p>
         <p>
           <strong>Tipo de reglas:</strong> {active.reglas}
@@ -78,7 +80,13 @@ export function ConceptMap() {
           <strong>Ejemplo neutral:</strong> {active.ejemploNeutral}
         </p>
         <p>
-          <strong>Como se valida:</strong> {active.validacion}
+          <strong>Cómo se valida:</strong> {active.validacion}
+        </p>
+        <p>
+          <strong>Rol operativo:</strong> {active.operationalRole}
+        </p>
+        <p>
+          <strong>Fase vinculada:</strong> {active.relatedPhase}
         </p>
       </article>
     </section>

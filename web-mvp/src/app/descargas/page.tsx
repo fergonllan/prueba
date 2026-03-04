@@ -1,41 +1,33 @@
-const downloads = [
-  {
-    name: "Tesis completa (PDF)",
-    status: "Pendiente de carga",
-    note: "Agregar archivo en public/docs/tesis.pdf",
-  },
-  {
-    name: "Bibliografia",
-    status: "Pendiente de carga",
-    note: "Agregar archivo en public/docs/bibliografia.pdf",
-  },
-  {
-    name: "Anexos",
-    status: "Pendiente de carga",
-    note: "Agregar archivo en public/docs/anexos.pdf",
-  },
-];
+﻿import Link from "next/link";
+import { downloadItems } from "@/content/site-content";
 
 export default function DescargasPage() {
   return (
     <>
       <section className="hero">
-        <p className="kicker">Material academico</p>
+        <p className="kicker">Material académico</p>
         <h2>Descargas</h2>
         <p>
-          Espacio para publicar tesis completa, bibliografia y anexos de apoyo
-          en formato descargable.
+          Repositorio documental del proyecto: tesis, bibliografía y anexos. Cuando
+          un archivo esté disponible, se habilita enlace directo desde esta sección.
         </p>
       </section>
 
       <section className="panel download-list">
-        {downloads.map((item) => (
+        {downloadItems.map((item) => (
           <article key={item.name} className="download-item">
             <div>
               <h3>{item.name}</h3>
               <p className="muted">{item.note}</p>
             </div>
-            <strong>{item.status}</strong>
+            <div className="download-action">
+              <strong>{item.status}</strong>
+              {item.href ? (
+                <Link href={item.href} className="quick-link">
+                  Descargar
+                </Link>
+              ) : null}
+            </div>
           </article>
         ))}
       </section>

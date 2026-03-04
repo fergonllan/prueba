@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import { demoRules, flowSteps } from "@/content/site-content";
@@ -15,7 +15,7 @@ function initialVotes() {
 
 export function ProtocolDemo() {
   const [text, setText] = useState(
-    "Este texto demo sirve para mostrar como se activan reglas discursivas sin exponer expresiones explicitas."
+    "Texto de ejemplo para simular activación de reglas sin publicar contenido sensible."
   );
   const [running, setRunning] = useState(false);
   const [step, setStep] = useState(0);
@@ -32,7 +32,7 @@ export function ProtocolDemo() {
     setRunning(true);
     setStep(0);
     for (let index = 1; index <= flowSteps.length; index += 1) {
-      await new Promise((resolve) => setTimeout(resolve, 350));
+      await new Promise((resolve) => setTimeout(resolve, 320));
       setStep(index);
     }
     setRunning(false);
@@ -53,8 +53,8 @@ export function ProtocolDemo() {
         <p className="kicker">Simulador del protocolo</p>
         <h2>Demo operativa (sin blockchain real)</h2>
         <p>
-          Esta simulacion muestra la mecanica de propuesta, debate, votacion y
-          registro sin procesar contenido sensible.
+          Esta simulación permite visualizar el ciclo de gobernanza y consenso sin
+          ejecutar datos reales ni exponer lenguaje dañino.
         </p>
       </div>
 
@@ -101,7 +101,7 @@ export function ProtocolDemo() {
       </div>
 
       <div className="rule-box">
-        <h3>Votacion de reglas ficticias</h3>
+        <h3>Votación de reglas ficticias</h3>
         <div className="vote-grid">
           {demoRules.map((rule) => (
             <article key={rule.id} className="vote-card">

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -7,7 +7,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/resumen", label: "Resumen" },
   { href: "/faq", label: "FAQ" },
-  { href: "/como-funciona", label: "Como Funciona" },
+  { href: "/como-funciona", label: "Cómo funciona" },
   { href: "/mapa", label: "Mapa" },
   { href: "/fases", label: "Fases" },
   { href: "/glosario", label: "Glosario" },
@@ -18,7 +18,7 @@ export function MainNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="nav-scroll">
+    <nav className="nav-scroll" aria-label="Navegación principal">
       {links.map((link) => {
         const active =
           pathname === link.href ||

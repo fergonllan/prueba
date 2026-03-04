@@ -1,4 +1,4 @@
-import { glossaryItems } from "@/content/site-content";
+﻿import { glossaryItems } from "@/content/site-content";
 
 export default function GlosarioPage() {
   return (
@@ -7,8 +7,8 @@ export default function GlosarioPage() {
         <p className="kicker">Conceptos clave</p>
         <h2>Glosario del proyecto</h2>
         <p>
-          Definiciones breves para facilitar lectura interdisciplinaria entre
-          comunicacion, linguistica y tecnologia blockchain.
+          Definiciones esenciales para leer el proyecto desde comunicación,
+          lingüística y arquitectura descentralizada sin perder precisión técnica.
         </p>
       </section>
 

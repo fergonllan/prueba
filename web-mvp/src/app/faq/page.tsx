@@ -1,16 +1,16 @@
-import { faqItems } from "@/content/site-content";
+﻿import { faqItems } from "@/content/site-content";
 
-const categories = ["Conceptos", "Operacion", "Gobernanza", "Etica", "Escalabilidad"] as const;
+const categories = [...new Set(faqItems.map((item) => item.category))];
 
 export default function FaqPage() {
   return (
     <>
       <section className="hero">
         <p className="kicker">Preguntas frecuentes</p>
-        <h2>FAQ del proyecto</h2>
+        <h2>FAQ del proyecto DAO-Ling</h2>
         <p>
-          Preguntas organizadas por categorias para explicar conceptos,
-          operacion, gobernanza y alcance del modelo.
+          Respuestas curadas desde la tesis para cubrir fundamentos, operación,
+          gobernanza, incentivos, límites éticos y escalabilidad.
         </p>
       </section>
 

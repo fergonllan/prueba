@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { MainNav } from "@/components/main-nav";
@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: siteMeta.title,
+  title: siteMeta.projectFormalTitle,
   description: siteMeta.subtitle,
 };
 
@@ -30,8 +30,11 @@ export default function RootLayout({
         <div className="background-layer" aria-hidden />
         <header className="site-header">
           <div className="content-wrap">
-            <p className="eyebrow">Tesis Maestria</p>
-            <h1 className="site-title">{siteMeta.title}</h1>
+            <p className="eyebrow">Tesis de máster</p>
+            <div className="brand-row">
+              <h1 className="site-title">{siteMeta.projectShortName}</h1>
+              <span className="brand-badge">Research Project</span>
+            </div>
             <p className="site-subtitle">{siteMeta.subtitle}</p>
             <MainNav />
           </div>
@@ -42,6 +45,7 @@ export default function RootLayout({
             {siteMeta.author} · {siteMeta.year}
           </p>
           <p>{siteMeta.faculty}</p>
+          <p>Dirección: {siteMeta.director}</p>
         </footer>
       </body>
     </html>
