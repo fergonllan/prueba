@@ -1,4 +1,5 @@
-import { complexityLadders, nonTechUsageSteps, socialFocusHighlights } from "@/content/site-content";
+import Link from "next/link";
+import { complexityLadders, nonTechUsageSteps, siteMeta, socialFocusHighlights } from "@/content/site-content";
 
 export function HomePrimer() {
   return (
@@ -10,6 +11,21 @@ export function HomePrimer() {
           Empezamos por el impacto social, seguimos con el uso práctico y recién después
           entramos en la capa técnica.
         </p>
+
+        <div className="hero-actions">
+          <Link href="/resumen" className="primary-btn">
+            Ver resumen ejecutivo
+          </Link>
+          <Link href="/docs/tesis.pdf" className="ghost-btn">
+            Descargar tesis completa
+          </Link>
+        </div>
+
+        <div className="trust-strip" aria-label="Datos clave del proyecto">
+          <span>{siteMeta.subtitle}</span>
+          <span>{siteMeta.author}</span>
+          <span>{siteMeta.faculty}</span>
+        </div>
       </div>
 
       <div className="home-primer-visuals">

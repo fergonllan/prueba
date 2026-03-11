@@ -9,7 +9,15 @@ export default function Home() {
       <HomePrimer />
 
       <section className="panel home-anchor-nav">
-        <p className="kicker">Ruta de lectura</p>
+        <div className="home-anchor-head">
+          <div>
+            <p className="kicker">Ruta de lectura</p>
+            <h2 className="section-title-sm">Elegí el nivel de profundidad que necesitás</h2>
+          </div>
+          <p className="muted home-anchor-copy">
+            Podés entrar por una lectura rápida, por impacto social o por arquitectura técnica.
+          </p>
+        </div>
         <nav className="anchor-list" aria-label="Navegación por secciones de home">
           <a href="#primer">Entender rápido</a>
           <a href="#impacto">Impacto social</a>
@@ -19,7 +27,7 @@ export default function Home() {
       </section>
 
       <section className="hero hero-executive" id="impacto">
-        <div>
+        <div className="hero-copy">
           <p className="kicker">Civic tech con enfoque en derechos</p>
           <h2>{siteMeta.projectFormalTitle}</h2>
           <p>
@@ -27,12 +35,23 @@ export default function Home() {
             identificar patrones de odio, fortalecer la convivencia democrática y
             comunicar resultados con transparencia metodológica.
           </p>
+          <div className="hero-note-grid" aria-label="Resumen de valor del proyecto">
+            <article className="hero-note-card">
+              <span>Problema</span>
+              <p>El odio escala más rápido que la respuesta institucional y necesita trazabilidad.</p>
+            </article>
+            <article className="hero-note-card">
+              <span>Método</span>
+              <p>Reglas lingüísticas revisadas por pares, con gobernanza DAO y registro auditable.</p>
+            </article>
+          </div>
         </div>
         <div className="stats-grid">
           {evidenceStats.map((stat) => (
             <article key={stat.label} className="stat-card">
               <p className="stat-value">{stat.value}</p>
               <p className="stat-label">{stat.label}</p>
+              <p className="stat-source">{stat.source}</p>
             </article>
           ))}
         </div>
@@ -47,6 +66,29 @@ export default function Home() {
             <p className="kpi-value">{block.kpiValue}</p>
           </article>
         ))}
+      </section>
+
+      <section className="panel panel-highlight">
+        <div>
+          <p className="kicker">Qué vas a encontrar en la web</p>
+          <h2>Una lectura guiada de la tesis, no solo un archivo para descargar</h2>
+          <p>
+            El sitio organiza el proyecto en capas: problema social, diseño DAO,
+            arquitectura técnica, gobernanza y roadmap. La idea es que cualquier
+            visitante pueda entrar por el nivel de detalle que necesite.
+          </p>
+        </div>
+        <div className="quick-links">
+          <Link href="/guia" className="quick-link">
+            Recorrido guiado en 15 puntos
+          </Link>
+          <Link href="/faq" className="quick-link">
+            Resolver preguntas frecuentes
+          </Link>
+          <Link href="/descargas" className="quick-link">
+            Ir a materiales descargables
+          </Link>
+        </div>
       </section>
 
       <section className="panel" id="operativa">

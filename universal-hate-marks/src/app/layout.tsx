@@ -29,23 +29,36 @@ export default function RootLayout({
       <body className={`${manrope.variable} ${spaceGrotesk.variable} antialiased`}>
         <div className="background-layer" aria-hidden />
         <header className="site-header">
-          <div className="content-wrap">
-            <p className="eyebrow">Tesis de máster</p>
-            <div className="brand-row">
-              <h1 className="site-title">{siteMeta.projectShortName}</h1>
-              <span className="brand-badge">Civic Tech Research</span>
+          <div className="content-wrap site-header-inner">
+            <div className="site-header-copy">
+              <p className="eyebrow">Tesis de máster</p>
+              <div className="brand-row">
+                <h1 className="site-title">{siteMeta.projectShortName}</h1>
+                <span className="brand-badge">Civic Tech Research</span>
+              </div>
+              <p className="site-subtitle">{siteMeta.subtitle}</p>
+              <div className="site-meta-row" aria-label="Contexto académico del proyecto">
+                <span>{siteMeta.author}</span>
+                <span>{siteMeta.faculty}</span>
+                <span>{siteMeta.year}</span>
+              </div>
             </div>
-            <p className="site-subtitle">{siteMeta.subtitle}</p>
             <MainNav />
           </div>
         </header>
         <main className="content-wrap page-content">{children}</main>
         <footer className="site-footer content-wrap">
-          <p>
-            {siteMeta.author} · {siteMeta.year}
-          </p>
-          <p>{siteMeta.faculty}</p>
-          <p>Dirección: {siteMeta.director}</p>
+          <div>
+            <p className="footer-title">{siteMeta.projectShortName}</p>
+            <p className="footer-copy">{siteMeta.subtitle}</p>
+          </div>
+          <div className="footer-meta">
+            <p>
+              {siteMeta.author} · {siteMeta.year}
+            </p>
+            <p>{siteMeta.faculty}</p>
+            <p>Dirección: {siteMeta.director}</p>
+          </div>
         </footer>
       </body>
     </html>
