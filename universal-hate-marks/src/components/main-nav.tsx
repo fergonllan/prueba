@@ -29,6 +29,7 @@ export function MainNav() {
           <Link
             key={link.href}
             href={link.href}
+            aria-current={active ? "page" : undefined}
             className={`nav-link ${active ? "nav-link-active" : ""}`}
           >
             {link.label}

@@ -14,8 +14,16 @@ export default function ComoFuncionaPage() {
         </p>
       </section>
 
-      <section className="panel">
-        <h3>Etapas del proceso</h3>
+      <section className="panel panel-highlight">
+        <div className="home-anchor-head">
+          <div>
+            <p className="kicker">Etapas del proceso</p>
+            <h3 className="section-title-sm">De la señal discursiva al hallazgo comunicable</h3>
+          </div>
+          <p className="muted home-anchor-copy">
+            La propuesta no se queda en una regla abstracta: detecta señales, las somete a consenso y produce una salida explicable.
+          </p>
+        </div>
         <ol className="step-list">
           {flowSteps.map((step, index) => (
             <li className="step-item" key={step}>
