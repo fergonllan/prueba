@@ -17,11 +17,11 @@ export function HomePrimer() {
     <section className="home-primer panel" id="primer">
       <FadeInStagger className="stack-lg">
         <FadeIn className="home-primer-head">
-          <p className="kicker">Entender en 60 segundos</p>
-          <h2>Cómo enfrentar discursos de odio con tecnología descentralizada</h2>
+          <p className="kicker">El proyecto</p>
+          <h2>Detectar el odio digital, de forma colectiva y verificable</h2>
           <p>
-            Empezamos por el impacto social, seguimos con el uso práctico y recién después
-            entramos en la capa técnica.
+            Un grupo de especialistas en lenguaje crea reglas para identificar discurso de odio.
+            Las reglas se votan, se registran de forma permanente y se usan para analizar contenido real.
           </p>
 
           <div className="flex gap-4 mt-4 flex-wrap">
@@ -35,11 +35,6 @@ export function HomePrimer() {
             </Link>
           </div>
 
-          <div className="trust-strip mt-6 flex gap-4 text-sm text-emerald-200/50" aria-label="Datos clave del proyecto">
-            <span className="flex items-center gap-1"><Shield className="w-4 h-4" /> {siteMeta.subtitle}</span>
-            <span className="flex items-center gap-1"><Users className="w-4 h-4" /> {siteMeta.author}</span>
-            <span className="flex items-center gap-1"><Layers className="w-4 h-4" /> {siteMeta.faculty}</span>
-          </div>
         </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">

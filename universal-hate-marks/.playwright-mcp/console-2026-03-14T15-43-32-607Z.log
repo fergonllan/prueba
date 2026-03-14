@@ -1,0 +1,2 @@
+[    2418ms] [WARNING] Lit is in dev mode. Not recommended for production! See https://lit.dev/msg/dev-mode for more information. @ http://localhost:5173/node_modules/.vite/deps/chunk-7VECR5FM.js?v=2bf8305e:93
+[    2672ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/__openclaw/control-ui-config.json:0

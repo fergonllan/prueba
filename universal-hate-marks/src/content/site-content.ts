@@ -77,7 +77,7 @@ export const nonTechUsageSteps = [
   },
   {
     title: "3. Se publican resultados comprensibles",
-    body: "El sistema comunica hallazgos con trazabilidad metodológica y lectura accesible.",
+    body: "Los resultados se publican de forma clara: con evidencia, fuentes y sin jerga técnica.",
   },
 ];
 
@@ -145,10 +145,10 @@ export const researchQuestions = [
 ];
 
 export const justificationHighlights = [
-  "El problema presenta escala global y crecimiento sostenido en contextos digitales de alta circulación.",
-  "La propuesta no busca una solución total, sino crear una infraestructura complementaria con reglas transparentes y gobernanza abierta.",
-  "La combinación de anonimato, descentralización y consenso reduce dependencia de intereses centralizados y habilita neutralidad operativa.",
-  "El carácter exploratorio del proyecto reconoce límites, pero produce valor teórico y práctico para futuras aplicaciones.",
+  "El discurso de odio crece en redes y plataformas más rápido de lo que los sistemas tradicionales pueden responder.",
+  "La propuesta no pretende resolver todo: busca crear una infraestructura complementaria con reglas transparentes y decisiones abiertas.",
+  "Distribuir las decisiones entre muchos participantes anónimos hace más difícil que un solo actor capture o sesgue el sistema.",
+  "El proyecto reconoce sus límites, pero produce valor concreto: un modelo probado y replicable para futuros desarrollos.",
 ];
 
 export type OperationalPillar = {
@@ -251,9 +251,9 @@ export const faqItems: FaqItem[] = [
   },
   {
     category: "Marco teórico",
-    question: "¿Qué vacancia detecta el estado del arte?",
+    question: "¿Qué falta en lo que ya existe?",
     answer:
-      "Se identifica poca evidencia de DAOs orientadas específicamente a almacenar y gobernar reglas discursivas contra odio.",
+      "No hay muchos antecedentes de organizaciones descentralizadas enfocadas específicamente en crear y gobernar reglas lingüísticas contra el odio.",
   },
   {
     category: "Operación DAO",
@@ -277,13 +277,13 @@ export const faqItems: FaqItem[] = [
     category: "Operación DAO",
     question: "¿El sistema publica resultados automáticamente?",
     answer:
-      "La lógica propuesta incluye una etapa específica de comunicación de hallazgos para visibilización social.",
+      "Sí, el diseño incluye una etapa de comunicación de hallazgos: no solo analiza, también publica lo que encuentra.",
   },
   {
     category: "Gobernanza y voto",
     question: "¿Quién tiene poder de decisión?",
     answer:
-      "Los nodos con derecho a voto definidos por el protocolo. La tesis enfatiza horizontalidad y ausencia de jerarquías rígidas.",
+      "Los participantes activos con derecho a voto según las reglas del sistema. No hay una persona o institución que mande sobre los demás.",
   },
   {
     category: "Gobernanza y voto",
@@ -373,9 +373,9 @@ export const phases: Phase[] = [
     id: "Fase 1",
     title: "Estrategia inicial",
     focus:
-      "Diseño del modelo, estructura de participantes, reglas de incentivos (tokenomics) y prototipo técnico de prueba.",
+      "Diseño del modelo, estructura de participantes, reglas de incentivos (cómo se recompensa a quienes contribuyen) y prototipo técnico de prueba.",
     milestones: [
-      "Niveles de la organización, conexiones con fuentes externas (oráculos) y flujo operacional",
+      "Niveles de la organización, conexiones con fuentes externas de datos y flujo operacional",
       "Plan de nodos y descentralización",
       "Plan de comunicación inicial",
       "Sistema de incentivos, gobernanza y contingencias",
@@ -748,8 +748,8 @@ export const homeTechnicalDiagrams: HomeTechnicalDiagram[] = [
     id: "arquitectura-ejecucion",
     title: "Arquitectura de ejecución y trazabilidad",
     caption:
-      "Representa el flujo de análisis: oráculos de contenido, evaluación por reglas, registro auditable y comunicación de hallazgos.",
-    source: "Síntesis técnica basada en capítulos de operabilidad y tokenomics.",
+      "Muestra cómo entran datos de fuentes externas (redes, medios), cómo se evalúan con las reglas aprobadas y cómo se registra y comunica lo encontrado.",
+    source: "Síntesis técnica basada en capítulos de operabilidad e incentivos.",
   },
 ];
 
